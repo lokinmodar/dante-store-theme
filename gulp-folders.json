@@ -1,0 +1,17 @@
+{
+  "paths": {
+    "sass": {
+      "src": "sass/** /*.scss",
+      "dest": "theme/styles/css"
+    },
+    ""
+  },
+  "options": {
+    "sass": {
+      "includePaths": [
+        "sass"
+      ],
+      "outputStyle": "compressed"
+    }
+  }
+}

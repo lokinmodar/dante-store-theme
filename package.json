@@ -1,0 +1,19 @@
+{
+  "name": "dante-store-theme",
+  "version": "0.0.0",
+  "description": "Tema MZ Next Level",
+  "main": "index.js",
+  "repository": "https://github.com/lokinmodar/dante-store-theme.git",
+  "author": "Dante Souza e Souza <lokinmodar@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd theme && vtex link --verbose"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.2"
+  }
+}
