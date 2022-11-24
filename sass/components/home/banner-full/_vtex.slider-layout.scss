@@ -1,0 +1,19 @@
+.paginationDot {
+  border-radius: 1px;
+  padding: 0;
+  &--main-banner {
+    background-color: #e6e6e6;
+    width: 1.25rem !important;
+    height: 0.25rem !important;
+
+    &--isActive {
+      background-color: #353535;
+      width: 1.5rem !important;
+    }
+  }
+}
+.paginationDotsContainer {
+  &--main-banner {
+    bottom: 1.125rem;
+  }
+}

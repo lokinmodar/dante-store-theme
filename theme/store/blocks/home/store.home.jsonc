@@ -1,5 +1,23 @@
 {
   "store.home": {
-    "blocks": []
+    "blocks": ["disposition-layout#home"]
+  },
+  "disposition-layout#home": {
+    "title": "Disposição dos elementos",
+    "children": ["list-context.image-list#main-banner"],
+    "props": {
+      "disposition": [
+        {
+          "order": 1,
+          "show": true,
+          "__editorItemTitle": "Banner Principal"
+        }
+      ]
+    }
   }
 }
+
+// usar flex-layout para criação dos outros elementos da home
+// usar info-card para criação de outros elementos da home
+
+// vitrine: rich-text, list-context.product-list, product-summary.shelf

@@ -1,7 +1,9 @@
 {
   "list-context.image-list#main-banner": {
-    "title": "Lista de Banners Principais",
+    "title": "Lista de Banners Principais", // Exibido no site editor
+    "children": ["slider-layout#main-banner"],
     "props": {
+      "blockClass": "main-banner",
       "height": 578,
       "images": [
         {
@@ -15,8 +17,39 @@
             "openNewTab": false,
             "title": "Saiba mais"
           }
+        },
+        {
+          "image": "https://fakeimg.pl/1920x578/",
+          "mobileImage": "https://fakeimg.pl/360x263/",
+          "description": "Banner Principal",
+          "width": "100%",
+          "link": {
+            "url": "#",
+            "noFollow": false,
+            "openNewTab": false,
+            "title": "Saiba mais"
+          }
         }
       ]
+    }
+  },
+  "slider-layout#main-banner": {
+    "title": "Slider de Banners Principais",
+    "props": {
+      "blockClass": "main-banner",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "fullWidth": true,
+      "showPaginationDots": "always",
+      "autoplay": {
+        "stopOnHover": true,
+        "timeout": 7000
+      }
     }
   }
 }
