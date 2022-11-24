@@ -1,0 +1,22 @@
+{
+  "list-context.image-list#main-banner": {
+    "title": "Lista de Banners Principais",
+    "props": {
+      "height": 578,
+      "images": [
+        {
+          "image": "assets/img/img-main-banner.png",
+          "mobileImage": "assets/img/img-main-banner-mobile.png",
+          "description": "Banner Principal",
+          "width": "100%",
+          "link": {
+            "url": "#",
+            "noFollow": false,
+            "openNewTab": false,
+            "title": "Saiba mais"
+          }
+        }
+      ]
+    }
+  }
+}
