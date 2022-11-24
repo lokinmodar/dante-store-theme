@@ -1,19 +1,40 @@
 {
-  "name": "dante-store-theme",
-  "version": "0.0.0",
-  "description": "Tema MZ Next Level",
-  "main": "index.js",
-  "repository": "https://github.com/lokinmodar/dante-store-theme.git",
-  "author": "Dante Souza e Souza <lokinmodar@gmail.com>",
-  "license": "MIT",
+  "name": "mznexlevel",
+  "version": "0.0.1",
+  "readme": "no readme file",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
-    "start": "cd theme && vtex link --verbose"
+    "start": "gulp css && concurrently --kill-others --handle-input \"cd theme && vtex link --verbose\" \"gulp watch\" -n \"vtex,gulp\" -c \"yellow.bold,green.bold\"",
+    "gulp:create:css": "gulp css",
+    "postinstall": "yarn gulp:create:css"
   },
   "dependencies": {
+    "@babel/core": "7.18.10",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "concurrently": "^7.3.0",
+    "fibers": "^5.0.2",
     "gulp": "^4.0.2",
-    "sass": "^1.56.1"
+    "gulp-babel": "^8.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.1",
+    "gulp-tinypng-extended": "^3.0.3",
+    "gulp-util": "^3.0.8",
+    "gulp-watch-sass": "^1.4.1",
+    "sass": "^1.54.3"
   },
   "devDependencies": {
-    "husky": "^8.0.2"
+    "git-commit-msg-linter": "^4.1.1",
+    "gulp-livereload": "^4.0.2",
+    "husky": "^8.0.1",
+    "postcss": "^8.4.16",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0"
   }
 }
