@@ -1,5 +1,11 @@
 .flexCol {
   &--spacer {
-    background-color: yellow;
+    // background-color: yellow;
+  }
+}
+
+.flexRow {
+  &--menu-link {
+    background-color: $secondary-pure-500;
   }
 }

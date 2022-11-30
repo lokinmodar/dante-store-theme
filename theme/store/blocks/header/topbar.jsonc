@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#topbar": {
+    // linha
+    "children": [
+      "flex-layout.col#topbar-left-col",
+      "flex-layout.col#topbar-center-col",
+      "flex-layout.col#topbar-right-col"
+    ], // coluna
+    "props": {
+      "blockClass": "topbar",
+      "fullWidth": true,
+      "colSizing": "equal",
+      "colGap": 6,
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.col#topbar-left-col": {
+    // esquerda
+    "children": [],
+    "props": {}
+  },
+  "flex-layout.col#topbar-center-col": {
+    // centro
+    "children": ["rich-text#topbar"],
+    "props": {
+      "blockClass": "topbar-center",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#topbar": {
+    "props": {
+      "blockClass": "topbar-text",
+      "text": "Batatinha **quando nasce** esparrama pelo chão",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#topbar-right-col": {
+    // direita
+    "children": ["locale-switcher"],
+    "props": {
+      "blockClass": "topbar-right",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  }
+}

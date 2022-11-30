@@ -1,0 +1,8 @@
+.styledLinkContent {
+  font-family: $main-font;
+  &--more {
+    font-weight: 700;
+    background-color: $secondary-pure-500;
+    font-size: $font-size-base;
+  }
+}
