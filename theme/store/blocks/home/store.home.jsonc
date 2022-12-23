@@ -4,13 +4,21 @@
   },
   "disposition-layout#home": {
     "title": "Disposição dos elementos",
-    "children": ["list-context.image-list#main-banner"],
+    "children": [
+      "list-context.image-list#main-banner",
+      "flex-layout.row#shelf"
+    ],
     "props": {
       "disposition": [
         {
           "order": 1,
           "show": true,
           "__editorItemTitle": "Banner Principal"
+        },
+        {
+          "order": 2,
+          "show": true,
+          "__editorItemTitle": "Vitrine"
         }
       ]
     }

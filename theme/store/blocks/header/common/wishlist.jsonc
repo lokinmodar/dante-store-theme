@@ -1,0 +1,16 @@
+{
+  "image#wishlist": {
+    "title": "Favoritos",
+    "props": {
+      "blockClass": "wishlist",
+      "src": "assets/svg/heart.svg",
+      "maxHeight": "24px",
+
+      "link": {
+        "openNewTab": false,
+        "title": "Favoritos",
+        "url": "/account/#/wishlist"
+      }
+    }
+  }
+}

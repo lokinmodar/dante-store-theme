@@ -1,0 +1,9 @@
+.container {
+  :global(.vtex-button) {
+    background-color: $secondary-pure-500;
+  }
+}
+.profileIcon--login {
+  width: 24px;
+  height: 24px;
+}
